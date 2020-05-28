@@ -10,7 +10,7 @@ export default function Home() {
 
       <main>
         <h1 className="title">
-          Learn about how Git works!
+          this is git
         </h1>
 
         <p className="description">
@@ -18,41 +18,83 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
+          <p className="subtitle">Configure tooling</p>
+          <a href="https://git-scm.com/docs/git-config" className="card">
+            <h3><code>git config</code></h3>
+            <p>Get and set repository or global options</p>
+          </a>
+          <p className="subtitle">Create repositories</p>
+          <a href="https://git-scm.com/docs/git-init" className="card">
             <h3><code>git init</code></h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>Create an empty Git repository or reinitialize an existing one</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
+          <a href="https://git-scm.com/docs/git-clone" className="card">
             <h3><code>git clone</code></h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Clone a repository into a new directory</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
+        </div>
+        <div className="grid">
+          <p className="subtitle">Branches</p>
+          <a href="https://git-scm.com/docs/git-branch" className="card">
+            <h3><code>git branch</code></h3>
+            <p>List, create, or delete branches</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-checkout" className="card">
+            <h3><code>git checkout</code></h3>
+            <p>Switch branches or restore working tree files</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-merge" className="card">
+            <h3><code>git merge</code></h3>
+            <p>Join two or more development histories together</p>
+          </a>
+        </div>
+        <div className="grid">
+          <p className="subtitle">Changes</p>
+          <a href="https://git-scm.com/docs/git-log" className="card">
+            <h3><code>git log</code></h3>
+            <p>Show commit logs</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-diff" className="card">
+            <h3><code>git diff</code></h3>
+            <p>Show changes between commits, commit and working tree, etc</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-show" className="card">
+            <h3><code>git show</code></h3>
+            <p>Show various types of objects</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-add" className="card">
             <h3><code>git add</code></h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Add file contents to the index</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
+          <a href="https://git-scm.com/docs/git-commit" className="card">
             <h3><code>git commit</code></h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Record changes to the repository</p>
           </a>
-
-          <a href="https://nextjs.org/learn" className="card">
+        </div>
+        <div className="grid">
+          <p className="subtitle">Syncronize changes</p>
+          <a href="https://git-scm.com/docs/git-fetch" className="card">
+            <h3><code>git fetch</code></h3>
+            <p>Download objects and refs from another repository</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-push" className="card">
             <h3><code>git push</code></h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <p>Update remote refs along with associated objects</p>
+          </a>
+          <a href="https://git-scm.com/docs/git-pull" className="card">
+            <h3><code>git pull</code></h3>
+            <p>Fetch from and integrate with another repository or a local branch</p>
           </a>
         </div>
       </main>
 
       <footer>
+      Made by&nbsp;
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://www.twitter.com/victorelexpe"
           target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          rel="noopener noreferrer">
+          @victorelexpe
         </a>
       </footer>
 
@@ -69,7 +111,7 @@ export default function Home() {
         }
 
         main {
-          padding: 5rem 0;
+          padding: 3rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
@@ -80,14 +122,9 @@ export default function Home() {
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
           align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
         }
 
         footer a {
@@ -116,6 +153,13 @@ export default function Home() {
           margin: 0;
           line-height: 1.15;
           font-size: 4rem;
+        }
+
+        .subtitle {
+          margin: 0;
+          line-height: 1.15;
+          font-size: 2rem;
+          float: none;
         }
 
         .title,
@@ -152,6 +196,7 @@ export default function Home() {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
+          float: none;
           text-align: left;
           color: inherit;
           text-decoration: none;
@@ -163,8 +208,8 @@ export default function Home() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          color: #ffd54f;
+          border-color: #ffd54f;
         }
 
         .card h3 {
