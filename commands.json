@@ -1,0 +1,73 @@
+[
+    {
+        "name": "git config",
+        "description": "Get and set repository or global options",
+        "url": "https://git-scm.com/docs/git-config",
+        "topic": "Basic tooling"
+    },
+    {
+        "name": "git init",
+        "description": "Create an empty Git repository or reinitialize an existing one",
+        "url": "https://git-scm.com/docs/git-init"
+    },
+    {
+        "name": "git clone",
+        "description": "Clone a repository into a new directory",
+        "url": "https://git-scm.com/docs/git-clone"
+    },
+    {
+        "name": "git branch",
+        "description": "List, create, or delete branches",
+        "url": "https://git-scm.com/docs/git-branch"
+    },
+    {
+        "name": "git checkout",
+        "description": "Switch branches or restore working tree files",
+        "url": "https://git-scm.com/docs/git-checkout"
+    },
+    {
+        "name": "git merge",
+        "description": "Join two or more development histories together",
+        "url": "https://git-scm.com/docs/git-merge"
+    },
+    {
+        "name": "git log",
+        "description": "Show commit logs",
+        "url": "https://git-scm.com/docs/git-log"
+    },
+    {
+        "name": "git diff",
+        "description": "Show changes between commits, commit and working tree, etc",
+        "url": "https://git-scm.com/docs/git-diff"
+    },
+    {
+        "name": "git show",
+        "description": "Add file contents to the index",
+        "url": "https://git-scm.com/docs/git-show"
+    },
+    {
+        "name": "git add",
+        "description": "Add file contents to the index",
+        "url": "https://git-scm.com/docs/git-add"
+    },
+    {
+        "name": "git commit",
+        "description": "Record changes to the repository",
+        "url": "https://git-scm.com/docs/git-commit"
+    },
+    {
+        "name": "git fetch",
+        "description": "Download objects and refs from another repository",
+        "url": "https://git-scm.com/docs/git-fetch"
+    },
+    {
+        "name": "git push",
+        "description": "Update remote refs along with associated objects",
+        "url": "https://git-scm.com/docs/git-push"
+    },
+    {
+        "name": "git pull",
+        "description": "Fetch from and integrate with another repository or a local branch",
+        "url": "https://git-scm.com/docs/git-pull"
+    }
+]

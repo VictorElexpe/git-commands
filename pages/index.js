@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import commands from '../commands.json'
 
 export default function Home() {
   return (
@@ -18,73 +19,12 @@ export default function Home() {
         </p>
 
         <div className="grid">
-          <p className="subtitle">Configure tooling</p>
-          <a href="https://git-scm.com/docs/git-config" className="card">
-            <h3><code>git config</code></h3>
-            <p>Get and set repository or global options</p>
-          </a>
-          <p className="subtitle">Create repositories</p>
-          <a href="https://git-scm.com/docs/git-init" className="card">
-            <h3><code>git init</code></h3>
-            <p>Create an empty Git repository or reinitialize an existing one</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-clone" className="card">
-            <h3><code>git clone</code></h3>
-            <p>Clone a repository into a new directory</p>
-          </a>
-        </div>
-        <div className="grid">
-          <p className="subtitle">Branches</p>
-          <a href="https://git-scm.com/docs/git-branch" className="card">
-            <h3><code>git branch</code></h3>
-            <p>List, create, or delete branches</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-checkout" className="card">
-            <h3><code>git checkout</code></h3>
-            <p>Switch branches or restore working tree files</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-merge" className="card">
-            <h3><code>git merge</code></h3>
-            <p>Join two or more development histories together</p>
-          </a>
-        </div>
-        <div className="grid">
-          <p className="subtitle">Changes</p>
-          <a href="https://git-scm.com/docs/git-log" className="card">
-            <h3><code>git log</code></h3>
-            <p>Show commit logs</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-diff" className="card">
-            <h3><code>git diff</code></h3>
-            <p>Show changes between commits, commit and working tree, etc</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-show" className="card">
-            <h3><code>git show</code></h3>
-            <p>Show various types of objects</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-add" className="card">
-            <h3><code>git add</code></h3>
-            <p>Add file contents to the index</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-commit" className="card">
-            <h3><code>git commit</code></h3>
-            <p>Record changes to the repository</p>
-          </a>
-        </div>
-        <div className="grid">
-          <p className="subtitle">Syncronize changes</p>
-          <a href="https://git-scm.com/docs/git-fetch" className="card">
-            <h3><code>git fetch</code></h3>
-            <p>Download objects and refs from another repository</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-push" className="card">
-            <h3><code>git push</code></h3>
-            <p>Update remote refs along with associated objects</p>
-          </a>
-          <a href="https://git-scm.com/docs/git-pull" className="card">
-            <h3><code>git pull</code></h3>
-            <p>Fetch from and integrate with another repository or a local branch</p>
-          </a>
+          {commands.map((command) => (
+            <a href={command.url} className="card">
+              <h3><code>{command.name}</code></h3>
+              <p>{command.description}</p>
+            </a>
+          ))}
         </div>
       </main>
 
